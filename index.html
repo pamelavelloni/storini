@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard Colombini Bot</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Arial,sans-serif;background:#FAF6EE;color:#222;padding:20px}
+  header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+  h1{font-size:15px;color:#3D1F0A;font-weight:bold}
+  .sub{font-size:11px;color:#888}
+  .kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px}
+  .kpi{background:white;border:1.5px solid #B8A46A;border-radius:8px;padding:14px;text-align:center}
+  .kpi .num{font-size:34px;font-weight:bold;color:#3D1F0A}
+  .kpi .lbl{font-size:11px;color:#666;margin-top:5px}
+  .kpi .note{font-size:9px;color:#aaa;margin-top:2px}
+  .section{background:white;border-radius:8px;border:1px solid #e0d8cc;margin-bottom:14px;overflow:hidden}
+  .sh{background:#3D1F0A;color:#B8A46A;font-size:12px;font-weight:bold;padding:8px 14px}
+  .sb{padding:12px 14px}
+  table{width:100%;border-collapse:collapse;font-size:11px}
+  th{background:#F2EAD8;color:#3D1F0A;font-weight:bold;padding:7px 8px;text-align:left;border-bottom:1.5px solid #B8A46A}
+  td{padding:6px 8px;border-bottom:1px solid #f0ebe0}
+  tr:hover td{background:#FAF6EE}
+  .log{font-family:monospace;font-size:11px;background:#1a1a1a;color:#B8A46A;border-radius:6px;padding:10px;white-space:pre-wrap;line-height:1.6;max-height:160px;overflow-y:auto}
+  .chart-wrap{height:140px;position:relative}
+</style>
+</head>
+<body>
+<header>
+  <h1>🤖 Colombini Bot — Dashboard Agenzia Storini</h1>
+  <div class="sub">Generato: 01/07/2026 22:16 &nbsp;|&nbsp; Bot gira alle 12:00 e 16:00</div>
+</header>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="num">2</div><div class="lbl">Lead ricevuti</div></div>
+  <div class="kpi"><div class="num">2</div><div class="lbl">Risposte inviate</div></div>
+  <div class="kpi"><div class="num">0</div><div class="lbl">Bozze rivenditore</div></div>
+  <div class="kpi"><div class="num">0</div><div class="lbl">Follow-up inviati</div><div class="note">Step 3 — in arrivo</div></div>
+</div>
+
+<div class="section">
+  <div class="sh">Andamento mensile</div>
+  <div class="sb"><div class="chart-wrap"><canvas id="chart"></canvas></div></div>
+</div>
+
+<div class="section">
+  <div class="sh">Lead registrati</div>
+  <div class="sb">
+    <table>
+      <thead><tr><th>Data</th><th>Nome</th><th>Email</th><th>Telefono</th><th>Prov.</th><th>Stato</th></tr></thead>
+      <tbody><tr>
+          <td>2026-06-29T16:00</td>
+          <td>Rosanna Arborea</td>
+          <td>rosanna.arborea@gmail.com</td>
+          <td>3450492649</td>
+          <td>VA</td>
+          <td><span style="background:#d1ecf1;color:#0c5460;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:bold">Risposta inviata</span></td>
+        </tr><tr>
+          <td>2026-06-28T12:00</td>
+          <td>Akdere Hes</td>
+          <td>akderehes@gmail.com</td>
+          <td>5307741608</td>
+          <td>VA</td>
+          <td><span style="background:#d1ecf1;color:#0c5460;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:bold">Risposta inviata</span></td>
+        </tr></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="section">
+  <div class="sh">Ultime righe log bot</div>
+  <div class="sb"><div class="log">  File "/Users/pams/Documents/Claude/Projects/Storini/colombini-bot/main.py", line 128, in <module>
+    main()
+  File "/Users/pams/Documents/Claude/Projects/Storini/colombini-bot/main.py", line 54, in main
+    conn = mailer.connetti(cfg)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pams/Documents/Claude/Projects/Storini/colombini-bot/mailer.py", line 20, in connetti
+    conn = imaplib.IMAP4_SSL(cfg["imap"]["host"], int(cfg["imap"]["porta"]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 1315, in __init__
+    IMAP4.__init__(self, host, port, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 205, in __init__
+    self.open(host, port, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 1328, in open
+    IMAP4.open(self, host, port, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 315, in open
+    self.sock = self._create_socket(timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 1318, in _create_socket
+    sock = IMAP4._create_socket(self, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 305, in _create_socket
+    return socket.create_connection(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+=== Run 01/07/2026 12:00 ===
+
+Fatto: 0 nuovi lead, 0 bozze rivenditore.
+Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
+
+=== Run 01/07/2026 16:00 ===
+
+Fatto: 0 nuovi lead, 0 bozze rivenditore.
+Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html</div></div>
+</div>
+
+<script>
+new Chart(document.getElementById("chart").getContext("2d"),{
+  type:"bar",
+  data:{labels:["2026-06"],datasets:[{label:"Lead",data:[2],backgroundColor:"#B8A46A",borderRadius:4}]},
+  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
+    scales:{y:{beginAtZero:true,ticks:{stepSize:1,font:{size:10}}},x:{ticks:{font:{size:10}}}}}
+});
+</script>
+</body>
+</html>
