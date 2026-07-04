@@ -29,7 +29,7 @@
 <body>
 <header>
   <h1>🤖 Colombini Bot — Dashboard Agenzia Storini</h1>
-  <div class="sub">Generato: 03/07/2026 12:00 &nbsp;|&nbsp; Bot gira ogni 30 minuti</div>
+  <div class="sub">Generato: 04/07/2026 12:00 &nbsp;|&nbsp; Bot gira ogni 30 minuti</div>
 </header>
 
 <div class="kpi-grid">
@@ -76,7 +76,31 @@
 
 <div class="section">
   <div class="sh">Ultime righe log bot</div>
-  <div class="sb"><div class="log">  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 315, in open
+  <div class="sb"><div class="log">GitHub Pages aggiornato.
+JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json
+
+=== Run 03/07/2026 12:00 ===
+
+Fatto: 0 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
+Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
+GitHub Pages aggiornato.
+JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json
+Traceback (most recent call last):
+  File "/Users/pams/Documents/Claude/Projects/Storini/colombini-bot/main.py", line 171, in <module>
+    main()
+  File "/Users/pams/Documents/Claude/Projects/Storini/colombini-bot/main.py", line 55, in main
+    conn     = mailer.connetti(cfg)
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pams/Documents/Claude/Projects/Storini/colombini-bot/mailer.py", line 21, in connetti
+    conn = imaplib.IMAP4_SSL(cfg["imap"]["host"], int(cfg["imap"]["porta"]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 1315, in __init__
+    IMAP4.__init__(self, host, port, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 205, in __init__
+    self.open(host, port, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 1328, in open
+    IMAP4.open(self, host, port, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 315, in open
     self.sock = self._create_socket(timeout)
                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 1318, in _create_socket
@@ -91,31 +115,7 @@
   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 978, in getaddrinfo
     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-socket.gaierror: [Errno 8] nodename nor servname provided, or not known
-
-=== Run 01/07/2026 12:00 ===
-
-Fatto: 0 nuovi lead, 0 bozze rivenditore.
-Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
-
-=== Run 01/07/2026 16:00 ===
-
-Fatto: 0 nuovi lead, 0 bozze rivenditore.
-Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
-
-=== Run 02/07/2026 12:00 ===
-
-Fatto: 0 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
-Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
-GitHub Pages aggiornato.
-JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json
-
-=== Run 02/07/2026 16:00 ===
-
-Fatto: 0 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
-Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
-GitHub Pages aggiornato.
-JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json</div></div>
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known</div></div>
 </div>
 
 <script>
