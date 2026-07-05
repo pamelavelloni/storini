@@ -29,12 +29,12 @@
 <body>
 <header>
   <h1>🤖 Colombini Bot — Dashboard Agenzia Storini</h1>
-  <div class="sub">Generato: 05/07/2026 11:27 &nbsp;|&nbsp; Bot gira ogni 30 minuti</div>
+  <div class="sub">Generato: 05/07/2026 18:55 &nbsp;|&nbsp; Bot gira ogni 30 minuti</div>
 </header>
 
 <div class="kpi-grid">
-  <div class="kpi"><div class="num">2</div><div class="lbl">Lead ricevuti</div></div>
-  <div class="kpi"><div class="num">2</div><div class="lbl">Risposte inviate</div></div>
+  <div class="kpi"><div class="num">3</div><div class="lbl">Lead ricevuti</div></div>
+  <div class="kpi"><div class="num">3</div><div class="lbl">Risposte inviate</div></div>
   <div class="kpi"><div class="num">1</div><div class="lbl">Bozze rivenditore</div></div>
   <div class="kpi"><div class="num">0</div><div class="lbl">Follow-up inviati</div></div>
 </div>
@@ -50,6 +50,16 @@
     <table>
       <thead><tr><th>Data</th><th>Nome</th><th>Email</th><th>Prov.</th><th>Rivenditore</th><th>Email rivenditore</th><th>Stato</th><th>Follow-up</th><th>Vendita</th></tr></thead>
       <tbody><tr>
+          <td>2026-07-05T18:55</td>
+          <td>Sara Conforto</td>
+          <td>sara.conforto@gmail.com</td>
+          <td>SO</td>
+          <td>–</td>
+          <td>–</td>
+          <td><span style="background:#d1ecf1;color:#0c5460;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:bold">Risposta inviata</span></td>
+          <td>–</td>
+          <td><span style="color:#aaa;font-size:10px">–</span></td>
+        </tr><tr>
           <td>2026-06-29T16:00</td>
           <td>Rosanna Arborea</td>
           <td>rosanna.arborea@gmail.com</td>
@@ -82,13 +92,6 @@ Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bo
 GitHub Pages aggiornato.
 JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json
 
-=== Run 05/07/2026 07:36 ===
-
-Fatto: 0 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
-Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
-GitHub Pages aggiornato.
-JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json
-
 === Run 05/07/2026 08:06 ===
 
 Fatto: 0 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
@@ -115,13 +118,20 @@ JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/das
 Fatto: 0 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
 Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
 GitHub Pages aggiornato.
+JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json
+
+=== Run 05/07/2026 11:27 ===
+
+Fatto: 0 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
+Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
+GitHub Pages aggiornato.
 JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json</div></div>
 </div>
 
 <script>
 new Chart(document.getElementById("chart").getContext("2d"),{
   type:"bar",
-  data:{labels:["2026-06"],datasets:[{label:"Lead",data:[2],backgroundColor:"#B8A46A",borderRadius:4}]},
+  data:{labels:["2026-06", "2026-07"],datasets:[{label:"Lead",data:[2, 1],backgroundColor:"#B8A46A",borderRadius:4}]},
   options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
     scales:{y:{beginAtZero:true,ticks:{stepSize:1,font:{size:10}}},x:{ticks:{font:{size:10}}}}}
 });
