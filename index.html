@@ -29,14 +29,14 @@
 <body>
 <header>
   <h1>🤖 Colombini Bot — Dashboard Agenzia Storini</h1>
-  <div class="sub">Generato: 15/07/2026 23:42 &nbsp;|&nbsp; Bot gira ogni 30 minuti</div>
+  <div class="sub">Generato: 16/07/2026 11:40 &nbsp;|&nbsp; Bot gira ogni 30 minuti</div>
 </header>
 
 <div class="kpi-grid">
   <div class="kpi"><div class="num">3</div><div class="lbl">Lead ricevuti</div></div>
   <div class="kpi"><div class="num">3</div><div class="lbl">Risposte inviate</div></div>
-  <div class="kpi"><div class="num">1</div><div class="lbl">Bozze rivenditore</div></div>
-  <div class="kpi"><div class="num">0</div><div class="lbl">Follow-up inviati</div></div>
+  <div class="kpi"><div class="num">2</div><div class="lbl">Bozze rivenditore</div></div>
+  <div class="kpi"><div class="num">1</div><div class="lbl">Follow-up inviati</div></div>
 </div>
 
 <div class="section">
@@ -66,8 +66,8 @@
           <td>VA</td>
           <td>BONATO ARREDAMENTI</td>
           <td>–</td>
-          <td><span style="background:;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:bold">bozza_inviata</span></td>
-          <td>–</td>
+          <td><span style="background:#e2d9f3;color:#6f42c1;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:bold">Follow-up inviato</span></td>
+          <td>2026-07-16</td>
           <td><span style="color:#aaa;font-size:10px">–</span></td>
         </tr><tr>
           <td>2026-06-28T12:00</td>
@@ -86,46 +86,46 @@
 
 <div class="section">
   <div class="sh">Ultime righe log bot</div>
-  <div class="sb"><div class="log">
-Fatto: 0 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
-Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
-GitHub Pages aggiornato.
-JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json
+  <div class="sb"><div class="log">  File "/Users/pams/Documents/Claude/Projects/Storini/colombini-bot/main.py", line 157, in main
+    mailer.invia_followup(conn, cfg, lead_row["rivenditore_email"],
+  File "/Users/pams/Documents/Claude/Projects/Storini/colombini-bot/mailer.py", line 194, in invia_followup
+    smtp.send_message(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 975, in send_message
+    return self.sendmail(from_addr, to_addrs, flatmsg, mail_options,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 890, in sendmail
+    raise SMTPRecipientsRefused(senderrs)
+smtplib.SMTPRecipientsRefused: {'None': (501, b'<None>: recipient address must contain a domain')}
 
-=== Run 15/07/2026 21:12 ===
+=== Run 16/07/2026 10:43 ===
+Traceback (most recent call last):
+  File "/Users/pams/Documents/Claude/Projects/Storini/colombini-bot/main.py", line 171, in <module>
+    main()
+  File "/Users/pams/Documents/Claude/Projects/Storini/colombini-bot/main.py", line 157, in main
+    mailer.invia_followup(conn, cfg, lead_row["rivenditore_email"],
+  File "/Users/pams/Documents/Claude/Projects/Storini/colombini-bot/mailer.py", line 194, in invia_followup
+    smtp.send_message(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 975, in send_message
+    return self.sendmail(from_addr, to_addrs, flatmsg, mail_options,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 890, in sendmail
+    raise SMTPRecipientsRefused(senderrs)
+smtplib.SMTPRecipientsRefused: {'None': (501, b'<None>: recipient address must contain a domain')}
 
-Fatto: 0 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
-Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
-GitHub Pages aggiornato.
-JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json
-
-=== Run 15/07/2026 21:42 ===
-
-Fatto: 0 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
-Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
-GitHub Pages aggiornato.
-JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json
-
-=== Run 15/07/2026 22:12 ===
-
-Fatto: 0 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
-Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
-GitHub Pages aggiornato.
-JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json
-
-=== Run 15/07/2026 22:42 ===
-
-Fatto: 0 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
-Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
-GitHub Pages aggiornato.
-JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json
-
-=== Run 15/07/2026 23:12 ===
-
-Fatto: 0 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
-Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
-GitHub Pages aggiornato.
-JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json</div></div>
+=== Run 16/07/2026 11:13 ===
+Traceback (most recent call last):
+  File "/Users/pams/Documents/Claude/Projects/Storini/colombini-bot/main.py", line 171, in <module>
+    main()
+  File "/Users/pams/Documents/Claude/Projects/Storini/colombini-bot/main.py", line 157, in main
+    mailer.invia_followup(conn, cfg, lead_row["rivenditore_email"],
+  File "/Users/pams/Documents/Claude/Projects/Storini/colombini-bot/mailer.py", line 194, in invia_followup
+    smtp.send_message(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 975, in send_message
+    return self.sendmail(from_addr, to_addrs, flatmsg, mail_options,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 890, in sendmail
+    raise SMTPRecipientsRefused(senderrs)
+smtplib.SMTPRecipientsRefused: {'None': (501, b'<None>: recipient address must contain a domain')}</div></div>
 </div>
 
 <script>
