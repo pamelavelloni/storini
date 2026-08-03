@@ -29,7 +29,7 @@
 <body>
 <header>
   <h1>🤖 Colombini Bot — Dashboard Agenzia Storini</h1>
-  <div class="sub">Generato: 02/08/2026 17:31 &nbsp;|&nbsp; Bot gira ogni 30 minuti</div>
+  <div class="sub">Generato: 03/08/2026 07:32 &nbsp;|&nbsp; Bot gira ogni 30 minuti</div>
 </header>
 
 <div class="kpi-grid">
@@ -116,46 +116,46 @@
 
 <div class="section">
   <div class="sh">Ultime righe log bot</div>
-  <div class="sb"><div class="log">Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
-GitHub Pages aggiornato.
+  <div class="sb"><div class="log">GitHub Pages aggiornato.
 JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json
 
-=== Run 01/08/2026 06:05 ===
+=== Run 02/08/2026 17:31 ===
 
 Fatto: 0 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
 Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
 GitHub Pages aggiornato.
 JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json
-
-=== Run 01/08/2026 06:35 ===
-
-Fatto: 0 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
-Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
-GitHub Pages aggiornato.
-JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json
-
-=== Run 01/08/2026 07:05 ===
-
-Fatto: 0 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
-Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
-GitHub Pages aggiornato.
-JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json
-
-=== Run 01/08/2026 12:01 ===
-
-Fatto: 0 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
-Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
-GitHub Pages aggiornato.
-JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json
-
-=== Run 02/08/2026 17:00 ===
-Nuovo lead: Anna Gorrasi (Como) - angorrasi@gmail.com
-  -> mail inviata a angorrasi@gmail.com
-
-Fatto: 1 nuovi lead | 0 bozze | 0 rivenditori salvati | 0 follow-up inviati.
-Dashboard aggiornata: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard.html
-GitHub Pages aggiornato.
-JSON aggiornato: /Users/pams/Documents/Claude/Projects/Storini/colombini-bot/dashboard_data.json</div></div>
+Traceback (most recent call last):
+  File "/Users/pams/Documents/Claude/Projects/Storini/colombini-bot/main.py", line 229, in <module>
+    main()
+  File "/Users/pams/Documents/Claude/Projects/Storini/colombini-bot/main.py", line 56, in main
+    conn     = mailer.connetti(cfg)
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pams/Documents/Claude/Projects/Storini/colombini-bot/mailer.py", line 21, in connetti
+    conn = imaplib.IMAP4_SSL(cfg["imap"]["host"], int(cfg["imap"]["porta"]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 1315, in __init__
+    IMAP4.__init__(self, host, port, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 205, in __init__
+    self.open(host, port, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 1328, in open
+    IMAP4.open(self, host, port, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 315, in open
+    self.sock = self._create_socket(timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 1318, in _create_socket
+    sock = IMAP4._create_socket(self, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/imaplib.py", line 305, in _create_socket
+    return socket.create_connection(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known</div></div>
 </div>
 
 <script>
